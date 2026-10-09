@@ -1,0 +1,36 @@
+# Python/Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Segredos e configuração local
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dados intermediários e downloads grandes
+data/bronze/
+data/silver/
+data/tmp/
+*.parquet
+*.duckdb
+*.sqlite
+*.db
+*.pdf
+
+# Artefatos do website futuro
+node_modules/
+dist/
+.netlify/
+.cache/
+
+# Editor / sistema
+.DS_Store
+Thumbs.db

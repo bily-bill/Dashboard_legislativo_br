@@ -1,0 +1,35 @@
+﻿fonte,entidade,tipo,ano,id,url,selecao
+camara,projeto,PL,2026,2647384,https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647384,caso dirigido 2026
+camara,projeto,PL,2026,2647345,https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647345,caso dirigido 2026
+camara,projeto,PLP,2026,2599994,https://dadosabertos.camara.leg.br/api/v2/proposicoes/2599994,caso dirigido 2026
+camara,projeto,PLP,2026,2600175,https://dadosabertos.camara.leg.br/api/v2/proposicoes/2600175,caso dirigido 2026
+camara,projeto,PEC,2026,2604173,https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604173,caso dirigido 2026
+camara,projeto,PEC,2026,2623400,https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623400,caso dirigido 2026
+senado,projeto,PL,2026,9101538,https://legis.senado.leg.br/dadosabertos/processo/9101538.json,caso dirigido 2026
+senado,projeto,PL,2026,9101917,https://legis.senado.leg.br/dadosabertos/processo/9101917.json,caso dirigido 2026
+senado,projeto,PLP,2026,9104876,https://legis.senado.leg.br/dadosabertos/processo/9104876.json,caso dirigido 2026
+senado,projeto,PLP,2026,9105948,https://legis.senado.leg.br/dadosabertos/processo/9105948.json,caso dirigido 2026
+senado,projeto,PEC,2026,8986903,https://legis.senado.leg.br/dadosabertos/processo/8986903.json,caso dirigido 2026
+senado,projeto,PEC,2026,9104654,https://legis.senado.leg.br/dadosabertos/processo/9104654.json,caso dirigido 2026
+camara,evento,presenca,2026,82870,https://dadosabertos.camara.leg.br/api/v2/eventos/82870,caso dirigido
+camara,votacao,resultado,2026,2611313-34,https://dadosabertos.camara.leg.br/api/v2/votacoes/2611313-34,caso dirigido
+senado,processo,vinculo_votacao,2023,8361684,https://legis.senado.leg.br/dadosabertos/processo/8361684.json,caso dirigido
+senado,senador,filiacao,2023,5672,https://legis.senado.leg.br/dadosabertos/senador/5672.json,caso dirigido
+camara,projeto,PL,2023,2354708,https://dadosabertos.camara.leg.br/api/v2/proposicoes/2354708,ID recente com dataApresentacao no ano
+senado,projeto,PL,2023,8361304,https://legis.senado.leg.br/dadosabertos/processo/8361304.json,menor ID da lista jan–mar
+camara,projeto,PLP,2023,2354671,https://dadosabertos.camara.leg.br/api/v2/proposicoes/2354671,ID recente com dataApresentacao no ano
+senado,projeto,PLP,2023,8369674,https://legis.senado.leg.br/dadosabertos/processo/8369674.json,menor ID da lista jan–mar
+camara,projeto,PEC,2023,2352476,https://dadosabertos.camara.leg.br/api/v2/proposicoes/2352476,ID recente com dataApresentacao no ano
+senado,projeto,PEC,2023,8373076,https://legis.senado.leg.br/dadosabertos/processo/8373076.json,menor ID da lista jan–mar
+camara,projeto,PL,2024,2424101,https://dadosabertos.camara.leg.br/api/v2/proposicoes/2424101,ID recente com dataApresentacao no ano
+senado,projeto,PL,2024,8614284,https://legis.senado.leg.br/dadosabertos/processo/8614284.json,menor ID da lista jan–mar
+camara,projeto,PLP,2024,2424078,https://dadosabertos.camara.leg.br/api/v2/proposicoes/2424078,ID recente com dataApresentacao no ano
+senado,projeto,PLP,2024,8615610,https://legis.senado.leg.br/dadosabertos/processo/8615610.json,menor ID da lista jan–mar
+camara,projeto,PEC,2024,2419252,https://dadosabertos.camara.leg.br/api/v2/proposicoes/2419252,ID recente com dataApresentacao no ano
+senado,projeto,PEC,2024,8617172,https://legis.senado.leg.br/dadosabertos/processo/8617172.json,menor ID da lista jan–mar
+camara,projeto,PL,2025,2491191,https://dadosabertos.camara.leg.br/api/v2/proposicoes/2491191,ID recente com dataApresentacao no ano
+senado,projeto,PL,2025,8786001,https://legis.senado.leg.br/dadosabertos/processo/8786001.json,menor ID da lista jan–mar
+camara,projeto,PLP,2025,2489309,https://dadosabertos.camara.leg.br/api/v2/proposicoes/2489309,ID recente com dataApresentacao no ano
+senado,projeto,PLP,2025,8790408,https://legis.senado.leg.br/dadosabertos/processo/8790408.json,menor ID da lista jan–mar
+camara,projeto,PEC,2025,2487818,https://dadosabertos.camara.leg.br/api/v2/proposicoes/2487818,ID recente com dataApresentacao no ano
+senado,projeto,PEC,2025,8786193,https://legis.senado.leg.br/dadosabertos/processo/8786193.json,menor ID da lista jan–mar
