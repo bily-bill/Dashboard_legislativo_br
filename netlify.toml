@@ -1,0 +1,7 @@
+[build]
+  publish = "public"
+
+[[headers]]
+  for = "/dados/v1/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

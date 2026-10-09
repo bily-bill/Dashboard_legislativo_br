@@ -1,6 +1,6 @@
 # Mapa de telas e prioridade dos visuais
 
-Escopo desta etapa: especificação de navegação e conteúdo. As rotas abaixo são propostas para o website futuro; ainda não há aplicação publicada. Um clique preserva Casa, período e filtros relevantes; ao mudar de Casa, a interface recalcula os filtros válidos.
+Este documento registra a proposta funcional inicial. O primeiro site estático já foi implementado em `public/`: `/index.html`, `/casa.html?casa=camara|senado`, `/projetos.html`, `/projeto.html?casa=...&ano=...&tipo=...&id=...` e `/metodologia.html`. As rotas simples e as telas de votação da tabela abaixo continuam como proposta para uma etapa posterior. Os filtros da exploração ficam na URL; o ano representa a data de apresentação.
 
 ```mermaid
 flowchart TD
@@ -31,7 +31,7 @@ flowchart TD
 
 ## Ordem de entrega sugerida para a próxima etapa
 
-1. **MVP com dados observados:** composição atual por Casa, série de iniciativas PL/PLP/PEC, busca/detalhe de projetos, temas oficiais e página de metodologia. Plotly: barras horizontais de partidos/UF, linha mensal por tipo e barras de temas. Todos os gráficos indicam no próprio cabeçalho período, Casa, fonte e data de atualização; tooltip inclui definição/unidade.
+1. **MVP implementado com dados observados:** composição atual por Casa, série de iniciativas PL/PLP/PEC, busca/detalhe de projetos e página de metodologia. Plotly: barras horizontais de partidos/UF, linha mensal por tipo e barras por tipo na visão geral. Temas oficiais não estão no JSON v1 e aguardam exportação. Todos os gráficos trazem período, Casa, fonte e unidade na área próxima ao visual e têm tabela textual equivalente.
 2. **Após validar vínculos e códigos:** detalhe de votações, série de votações aprovadas, votos por código/partido e participação em votações nominais. `Aprovada em votação` fica claramente separado de tramitação final e norma publicada.
 3. **Após validar denominadores e fontes:** taxa de presença por Casa, etapas de conclusão/aprovação, ideologia partidária. Senado fica sem taxa de presença até fonte equivalente comprovada.
 4. **Após avaliação e revisão de rótulos:** categoria comum, subtema e direção de medida com evidência, versão e responsável. Filtros enriquecidos indicam sua origem e data.

@@ -2,9 +2,19 @@
 
 Projeto exploratório para coletar dados públicos da Câmara dos Deputados e do Senado Federal, preservá-los em uma camada bronze, preparar tabelas analíticas e publicar visualizações interativas.
 
-## Etapa atual: dados públicos estáticos
+## Etapa atual: primeiro site estático
 
-As APIs, arquivos e relações candidatas foram explorados nos notebooks. A primeira exportação pública contém listagens de PL, PLP e PEC apresentados desde 2023, a composição atual de cada Casa e agregados para o painel. Os JSONs estão em [`public/dados/v1/`](public/dados/v1/) e ocupam cerca de 16 MB. Bronze/Silver persistentes, temas completos, tramitações, votações e o website ainda não foram implementados.
+As APIs, arquivos e relações candidatas foram explorados nos notebooks. A primeira exportação pública contém listagens de PL, PLP e PEC apresentados desde 2023, a composição atual de cada Casa e agregados para o painel. Os JSONs estão em [`public/dados/v1/`](public/dados/v1/) e ocupam cerca de 16 MB. O site em [`public/`](public/) apresenta composição atual, séries de projetos, busca e detalhe com fontes e limitações. Bronze/Silver persistentes, temas completos, tramitações e votações ainda não foram implementados.
+
+## Abrir o site localmente
+
+Na raiz do repositório, execute `python -m http.server 8000 --directory public` e abra `http://localhost:8000/`. Use um servidor HTTP; abrir o HTML diretamente como arquivo impede as leituras `fetch` dos JSONs. Não é necessário instalar pacotes JavaScript nem executar um build. A versão de Plotly.js usada nos gráficos está fixada em `public/assets/vendor/`, acompanhada da licença.
+
+O navegador lê apenas o snapshot JSON v1. O ano nos filtros de projetos é o **ano da apresentação**; composição é sempre o retrato da coleta mais recente. Presença, votações, aprovação final, ideologia e categorias temáticas não aparecem como indicadores porque sua cobertura ou interpretação ainda depende de validação.
+
+## Publicar no Netlify
+
+Conecte este repositório do GitHub ao Netlify. O arquivo [`netlify.toml`](netlify.toml) define `public` como pasta de publicação e o site não exige comando de build. Após cada commit na branch publicada, o Netlify entrega os HTMLs, a biblioteca Plotly e os JSONs do mesmo snapshot. A conexão da conta e o domínio devem ser configurados no painel do Netlify.
 
 Comece por:
 
@@ -25,7 +35,7 @@ Comece por:
 
 ## Hipótese de fluxo (a validar)
 
-`fontes oficiais → exportador Python → JSONs públicos por Casa/ano/tipo + agregados → futuro HTML interativo`
+`fontes oficiais → exportador Python → JSONs públicos por Casa/ano/tipo + agregados → HTML e Plotly no navegador`
 
 A exportação atual é reconstruída integralmente fora do website e publicada após validar tipo, data e IDs. Não presumir que tabelas das duas Casas compartilham chaves ou semântica sem validar os identificadores e esquemas.
 
@@ -39,4 +49,4 @@ Para recriar os JSONs públicos: `python -m pip install -r requirements.txt` e `
 
 ## Próxima etapa
 
-Construir o primeiro painel de composição atual e projetos usando o esquema JSON v1. Validar separadamente denominadores de presença, códigos de voto, vínculos projeto–votação, classificação ideológica e direção de medida antes de expor esses indicadores.
+Validar separadamente denominadores de presença, códigos de voto, vínculos projeto–votação, classificação ideológica e direção de medida antes de expor esses indicadores. Aprimorar a busca se o volume de JSONs deixar a leitura no navegador lenta.
